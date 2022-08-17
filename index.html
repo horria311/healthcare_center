@@ -9,13 +9,43 @@
             <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
             <link rel="stylesheet" href="css/all.css">
             <link rel="stylesheet" href="css/all.min.css">
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/response.css">
             <link rel="stylesheet" href="css/style.css">
+            <style>
+                .example {
+                  padding: 20px;
+                  color: white;
+                }
+                /* Extra small devices (phones, 600px and down) */
+                @media only screen and (max-width: 600px) {
+                  .example {background: white;}
+                }
+                /* Small devices (portrait tablets and large phones, 600px and up) */
+                @media only screen and (min-width: 600px) {
+                  .example {background: white;}
+                }
+                </style>
 
         </head>
-        <body>
-            <header class="header">
-            <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>Healthcare Center</a>   
-                <nav class="navbar">
+        <body class="example">
+            
+            <header class="header" class="nav-header">
+
+                <!-- Navbar logo -->
+                <a href="#" class="logo" class="nav-logo"> 
+                    <i class="fas fa-heartbeat"></i>Healthcare Center</a>   
+                <!-- responsive navbar toggle button -->
+                   <input type="checkbox" id="nav-check">
+                   <div class="nav-btn">
+                       <label for="nav-check">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       </label>
+                   </div>
+                <!-- Navbar items -->
+                <nav class="nav-links">
 
                 <a href="#home">home</a>
                 <a href="#services">services</a>
@@ -26,9 +56,9 @@
                 <a href="#blogs">blogs</a>
                 
                 </nav>
-            <div id="menu-btn" class="fas fa-bars"></div>
-            </header>
-            <section class="home" id="home">
+                <div id="menu-btn" class="fas fa-bars"></div>
+             </header>
+     <section class="home" id="home">
                 <div class="image"> 
                 <img src="image/home-img.svg" alt="">
 
